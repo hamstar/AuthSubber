@@ -2,8 +2,8 @@
 
 ## What is it?
 
-AuthSubber provides a means to authenticate to google data API's using 
-Google AuthSub system.  It then returns a google service object that you can use.
+AuthSubber provides a means to authenticate to google data API's using  the
+Google AuthSub system through a PHP class.  It then returns a google service object that you can use.
 
 ## Does it work?
 
@@ -22,8 +22,7 @@ First a sender script to create the auth link for the user to click on:
 	include 'AuthSubber.php';
 	$a = new AuthSubber;
 	
-	$url = $a->send( 'Calendar', 'http://example.com/receiver.php' 
-);
+	$url = $a->send( 'Calendar', 'http://example.com/receiver.php' );
 	
 	echo $url;
 	
